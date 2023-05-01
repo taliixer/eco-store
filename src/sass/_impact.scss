@@ -1,0 +1,48 @@
+@use "variables";
+@use "mixins" as mx;
+
+.container-impact{
+    @include mx.flexCenter(row,space-between);
+    margin-block-end: 130px;
+
+    .impact{
+        @include mx.flexCenter(column);
+        width: 50%;
+        max-width: 592px;
+        padding-block-start: 40px;
+
+        @include mx.h2-style(6rem,500,55px);
+
+        p{
+            font-size: 2.5rem;
+            margin-block-end: 100px;
+        }
+        button{
+            width: 261px;
+            height: 75px;
+            background-color: variables.$decorations-color;
+            border-radius: 35px;
+            border: none;
+            color: white;
+            font-size: 2.3rem;
+            font-weight: bold;
+            transition: .5s;
+
+            &:hover{
+                transform: scale(1.1);
+                cursor: pointer;
+                transition: .5s;
+            }
+        }
+    }
+    .image-section{
+        width: 50%;
+        max-width: 550px;
+        img{
+            width: 100%;
+            max-height: 686px;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+@use "variables";
+@use "mixins" as mx;
+
+.location{
+    @include mx.h2-style(5rem,500,65px,variables.$primary-text-color);
+    color: variables.$decorations-color;
+    margin-bottom: 100px;
+    .map{
+        @include mx.flexCenter(row,center,center);
+        padding-bottom: 50px;
+    }
+
+    .location-mall{
+        font-size: 3.5rem;
+    }
+    .location-mall + p{
+        font-size: 2.5rem;
+    }
+}

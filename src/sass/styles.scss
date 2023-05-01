@@ -1,0 +1,27 @@
+@use 'variables';
+@use 'navbar';
+@use 'impact';
+@use 'product-section';
+@use 'about-us';
+@use 'gallery';
+@use 'location';
+@use 'footer';
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+body{
+    background-color: variables.$primary-color;
+    font-family: variables.$font-stack;
+    color: variables.$primary-text-color;
+    svg path{
+        stroke: currentColor;
+      }
+}
+main{
+    margin: 0 auto;
+    max-width: 1400px;
+    background-color: variables.$primary-color;
+    padding-inline: 65px;
+}

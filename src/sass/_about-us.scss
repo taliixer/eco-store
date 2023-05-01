@@ -1,0 +1,30 @@
+@use 'variables' as v;
+@use 'mixins' as mx;
+
+.about-us {
+    margin-block-end: 220px;
+    @include mx.h2-style(5rem,500,153px);
+
+    .mision {
+        display: flex;
+        justify-content: space-around;
+
+        .earth {
+            display: flex;
+            align-items: center;
+
+            p {
+                width: 362px;
+                font-size: 3rem;
+                font-weight: 500;
+                color: v.$decorations-color;
+                text-align: center;
+            }
+        }
+
+        .innovation {
+            @extend .earth
+        }
+    }
+
+}

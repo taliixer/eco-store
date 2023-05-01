@@ -1,0 +1,7 @@
+@use "variables";
+@import "mixins";
+
+footer{
+    width: 100%;
+    background-color: variables.$decorations-color;
+}
